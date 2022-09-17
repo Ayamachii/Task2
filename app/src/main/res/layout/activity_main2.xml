@@ -19,6 +19,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/border"
                 android:src="@drawable/apples" />
 
             <ImageView
@@ -98,8 +100,9 @@
                 android:layout_toRightOf="@id/minus"
                 android:background="@drawable/counter_border"
                 android:textAlignment="center"
-                android:textSize="40sp"
-                android:textStyle="bold" />
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textColor="@color/black"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/plus"
@@ -133,6 +136,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:background="@drawable/border"
             android:layout_marginBottom="17dp">
 
             <TextView
@@ -164,6 +169,7 @@
             android:padding="10dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
+            android:background="@drawable/border"
             android:layout_marginBottom="17dp">
 
             <TextView
@@ -200,6 +206,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:layout_marginStart="20dp"
+            android:background="@drawable/border"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="5dp">
 
@@ -257,9 +264,9 @@
         </RelativeLayout>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="80dp"
             android:layout_margin="20dp"
-            android:backgroundTint="#6BD280"
+            android:backgroundTint="#60C575"
             android:text="@string/add_to_basket"
             android:textSize="19sp"/>
 </LinearLayout>
