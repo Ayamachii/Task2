@@ -1,3 +1,3 @@
 # Task2
 Checkout screen
-## data binding is not used
+data binding is not used
