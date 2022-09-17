@@ -35,6 +35,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 count--;
+
                 cnt.setText(String.valueOf(count));
             }
         });
