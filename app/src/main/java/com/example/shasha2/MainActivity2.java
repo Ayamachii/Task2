@@ -22,6 +22,14 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         basketbinding = DataBindingUtil.setContentView(this, R.layout.activity_main2);
+        Basket basket = new Basket(getDrawable(R.drawable.apples),
+                "Natural Red Apples",
+                1,
+                2.99f,
+                "Apples are nutritious. Apples may be good or weightloss. Apples may be good for your skin as a part of a healthy and varied diet.",
+                100,
+                3);
+        basketbinding.setBasket(basket);
 
 
         basketbinding.plus.setOnClickListener(new View.OnClickListener() {

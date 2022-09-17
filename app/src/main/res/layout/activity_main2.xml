@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+    <variable
+        name="basket"
+        type="com.example.shasha2.Basket" />
     </data>
 <LinearLayout
     android:layout_width="match_parent"
@@ -24,7 +26,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/apples" />
+                android:src="@{basket.prodImage}" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -58,7 +60,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="20dp"
-                android:text="Natural Red Apples"
+                android:text="@{basket.prodName}"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold" />
@@ -70,7 +72,7 @@
                 android:layout_below="@id/product_name"
                 android:layout_marginStart="20dp"
                 android:layout_marginBottom="10dp"
-                android:text="1 kg, price"
+                android:text="@{String.valueOf(basket.quantity)}"
                 android:textSize="17sp" />
 
             <ImageView
@@ -125,7 +127,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="20dp"
-                android:text="4.99$"
+                android:text="@{String.valueOf(basket.prodPrice)}"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -154,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/product_detail"
-                android:text="Apples are nutritious. Apples may be good for weight loss. Apples may be good for your body. It is a part of a healthy and varied diet." />
+                android:text="@{basket.prodDescription}" />
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -196,7 +198,7 @@
                 android:layout_toLeftOf="@id/forward_arrow"
                 android:background="@drawable/graybackground"
                 android:padding="3dp"
-                android:text="100 gr"
+                android:text="@{basket.nutritionQuantity}"
                 android:textSize="13sp" />
 
         </RelativeLayout>

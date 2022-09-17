@@ -2,6 +2,11 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="market"
+            type="com.example.shasha2.Market" />
+    </data>
 <androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -32,7 +37,7 @@
             android:id="@+id/prodImage1"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:src="@drawable/img"
+            android:src="@{market.productImage}"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
@@ -49,7 +54,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bell Pepper Red"
+            android:text="@{market.productName}"
             android:id="@+id/prodName1"
             android:textSize="17sp"
 
@@ -60,7 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prodInfo1"
-            android:text="1 kg, price"
+            android:text="@{market.productInfo}"
             android:textColor="@color/mylightgray"
             android:textSize="13sp"
 
@@ -107,7 +112,7 @@
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4.99$"
+            android:text="@{String.valueOf(market.productPrice)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
