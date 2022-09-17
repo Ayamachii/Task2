@@ -2,41 +2,42 @@ package com.example.shasha2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.shasha2.databinding.ActivityMain2Binding;
+
 public class MainActivity2 extends AppCompatActivity {
 
-    AppCompatButton plus_btn;
-    AppCompatButton minus_btn;
+    ActivityMain2Binding basketbinding;
+
     TextView cnt;
     public int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
 
-        plus_btn = findViewById(R.id.plus);
-        minus_btn = findViewById(R.id.minus);
-        cnt = findViewById(R.id.textView);
+        basketbinding = DataBindingUtil.setContentView(this, R.layout.activity_main2);
 
-        plus_btn.setOnClickListener(new View.OnClickListener() {
+
+        basketbinding.plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 count++;
-                cnt.setText(String.valueOf(count));
+                basketbinding.textView.setText(String.valueOf(count));
             }
         });
 
-        minus_btn.setOnClickListener(new View.OnClickListener() {
+        basketbinding.minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 count--;
 
-                cnt.setText(String.valueOf(count));
+                basketbinding.textView.setText(String.valueOf(count));
             }
         });
 
