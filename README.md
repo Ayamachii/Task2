@@ -1,3 +1,2 @@
 # Task2
-Checkout screen
-data binding is not used
+2 activities using data binding
