@@ -97,7 +97,6 @@
                 android:layout_marginRight="5dp"
                 android:layout_toRightOf="@id/minus"
                 android:background="@drawable/counter_border"
-                android:text="1"
                 android:textAlignment="center"
                 android:textSize="40sp"
                 android:textStyle="bold" />
@@ -106,9 +105,9 @@
                 android:id="@+id/plus"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginTop="12dp"
                 android:layout_below="@id/product_info"
                 android:layout_centerInParent="true"
+                android:layout_marginTop="12dp"
                 android:layout_toRightOf="@id/textView"
                 android:background="@drawable/ic__plus" />
 
