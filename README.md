@@ -1,3 +1,2 @@
 # Task2
-Checkout screen
-data binding is not used
+Checkout and add to basket screen with data binding
