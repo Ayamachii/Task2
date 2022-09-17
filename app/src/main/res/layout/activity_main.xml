@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable
-            name="market"
+            name="market1"
+            type="com.example.shasha2.Market" />
+        <variable
+            name="market2"
+            type="com.example.shasha2.Market" />
+        <variable
+            name="market3"
+            type="com.example.shasha2.Market" />
+        <variable
+            name="market4"
             type="com.example.shasha2.Market" />
     </data>
 <androidx.core.widget.NestedScrollView
@@ -37,7 +46,7 @@
             android:id="@+id/prodImage1"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:src="@{market.productImage}"
+            android:src="@{market1.productImage}"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
@@ -54,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{market.productName}"
+            android:text="@{market1.productName}"
             android:id="@+id/prodName1"
             android:textSize="17sp"
 
@@ -65,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prodInfo1"
-            android:text="@{market.productInfo}"
+            android:text="@{market1.productInfo}"
             android:textColor="@color/mylightgray"
             android:textSize="13sp"
 
@@ -112,7 +121,7 @@
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(market.productPrice)}"
+            android:text="@{String.valueOf(market1.productPrice)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -133,7 +142,7 @@
             android:id="@+id/prodImage2"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:src="@drawable/img_1"
+            android:src="@{market2.productImage}"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
@@ -150,7 +159,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Egg Chicken Red"
+            android:text="@{market2.productName}"
             android:id="@+id/prodName2"
             android:textSize="17sp"
 
@@ -161,7 +170,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prodInfo2"
-            android:text="4 pcs, price"
+            android:text="@{market2.productInfo}"
             android:textColor="@color/mylightgray"
             android:textSize="13sp"
 
@@ -209,7 +218,7 @@
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1.99$"
+            android:text="@{String.valueOf(market2.productPrice)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -229,7 +238,7 @@
             android:id="@+id/prodImage3"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:src="@drawable/banana"
+            android:src="@{market3.productImage}"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
@@ -246,7 +255,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Organic Bananas"
+            android:text="@{market3.productName}"
             android:id="@+id/prodName3"
             android:textSize="17sp"
 
@@ -257,7 +266,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prodInfo3"
-            android:text="12 kg, price"
+            android:text="@{market3.productInfo}"
             android:textColor="@color/mylightgray"
             android:textSize="13sp"
 
@@ -305,7 +314,7 @@
             android:id="@+id/textView23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3.00$"
+            android:text="@{String.valueOf(market3.productPrice)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -326,7 +335,7 @@
             android:id="@+id/prodImage4"
             android:layout_width="100dp"
             android:layout_height="140dp"
-            android:src="@drawable/ginger"
+            android:src="@{market4.productImage}"
 
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
@@ -343,7 +352,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ginger"
+            android:text="@{market4.productName}"
             android:id="@+id/prodName4"
             android:textSize="17sp"
 
@@ -354,7 +363,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/prodInfo4"
-            android:text="250 gm, price"
+            android:text="@{market4.productInfo}"
             android:textColor="@color/mylightgray"
             android:textSize="13sp"
 
@@ -402,7 +411,7 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2.99$"
+            android:text="@{String.valueOf(market4.productPrice)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"

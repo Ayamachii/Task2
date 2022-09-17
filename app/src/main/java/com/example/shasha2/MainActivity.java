@@ -25,11 +25,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mainbinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-        Market market = new Market(getDrawable(R.drawable.img),
+        Market market1 = new Market(getDrawable(R.drawable.img),
                 "Red Bell Peppers",
                 "1 kg, price",
                 4.99f);
-        mainbinding.setMarket(market);
+        Market market2 = new Market(getDrawable(R.drawable.img_1),
+                "Egg Chicken Red",
+                "4 pcs, price",
+                1.99f);
+        Market market3 = new Market(getDrawable(R.drawable.banana),
+                "Organic Bananas",
+                "12 kg, price",
+                3.00f);
+        Market market4 = new Market(getDrawable(R.drawable.ginger),
+                "Ginger",
+                "250gm, price",
+                2.99f);
+        mainbinding.setMarket1(market1);
+        mainbinding.setMarket2(market2);
+        mainbinding.setMarket3(market3);
+        mainbinding.setMarket4(market4);
+
 
 //first item
         mainbinding.textView1.setText(String.valueOf(counter1));
