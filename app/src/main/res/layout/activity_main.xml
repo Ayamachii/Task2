@@ -15,6 +15,9 @@
         <variable
             name="market4"
             type="com.example.shasha2.Market" />
+        <variable
+            name="dollar_sign"
+            type="String" />
     </data>
 <androidx.core.widget.NestedScrollView
     android:layout_width="match_parent"
@@ -121,7 +124,7 @@
             android:id="@+id/textView21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(market1.productPrice)}"
+            android:text="@{String.valueOf(market1.productPrice).concat(dollar_sign)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -218,7 +221,7 @@
             android:id="@+id/textView22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(market2.productPrice)}"
+            android:text="@{String.valueOf(market2.productPrice).concat(dollar_sign)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -314,7 +317,7 @@
             android:id="@+id/textView23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(market3.productPrice)}"
+            android:text="@{String.valueOf(market3.productPrice).concat(dollar_sign)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -411,7 +414,7 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.valueOf(market4.productPrice)}"
+            android:text="@{String.valueOf(market4.productPrice).concat(dollar_sign)}"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"

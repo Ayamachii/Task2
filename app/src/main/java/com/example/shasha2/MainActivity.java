@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mainbinding.setMarket2(market2);
         mainbinding.setMarket3(market3);
         mainbinding.setMarket4(market4);
+        mainbinding.setDollarSign("$ ");
 
 
 //first item
